@@ -1,0 +1,381 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: sans-serif;
+}
+
+header{
+    width: 100%;
+    background-color: rgb(33, 125, 187);
+    height: 60px;
+}
+.header-div{
+    display: flex;
+    justify-content: space-around;
+}
+.header-div h2{
+    display: inline-block;
+    float: left;
+    padding-top: 18px;
+    color: white;
+}
+.header-div span{
+    color: rgb(240, 236, 35);
+}
+.header-div ul{
+    list-style: none;
+    display: flex;
+}
+.header-div ul li{
+   padding: 18px 10px 10px 10px;
+   font-size: 20px;
+   cursor: pointer;
+   color: white;
+   font-weight: 700;
+}
+.header-div ul .active,
+.header-div ul li:hover{
+    color: rgb(252, 250, 127);
+}
+.main-div{
+    height: 700px;
+    width: 100%;
+    background-image: url(../pic/bb.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.main-h1{
+    font-weight: 700;
+    padding: 10px;
+    margin-bottom: 40px;
+    border-top: 2px solid rgb(240, 240, 240) ;
+    border-bottom: 2px solid rgb(250, 249, 249) ;
+    color: rgb(255, 255, 255);
+}
+
+.main-btn{
+    padding: 10px;
+    border-radius: 5px;
+    font-size: 19px;
+    color: white;
+    background-color: rgba(43, 131, 190,0);
+    border: 2px solid ghostwhite;
+    cursor: pointer;
+}
+
+.container1{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding-bottom: 60px;
+}
+.container1 h2{
+    font-weight: 700;
+    padding-bottom: 20px;
+}
+.container1 div{
+    width: 29.5%;
+    float: left;
+    padding: 20px 20px;
+}
+.container1 div h2{
+    text-transform: capitalize;
+    color: #555;
+}
+.container1 div p{
+    line-height: 1.5;
+}
+.cont1{
+    background-color: gainsboro;
+    height: 500px;
+}
+.container{
+    overflow: hidden;
+    width: 80%;
+    margin: auto;
+    
+}
+.container .img{
+    width: 40%;
+    height: 100%;
+    float: left;
+    height: 500px;
+
+}
+.container .img img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid #fff;
+}
+.container .about{
+    width: 60%;
+    float: left;
+}
+.about h2{
+    padding-top: 20px;
+    text-transform: uppercase;
+    padding-bottom: 20px;
+}
+.skill p:first-of-type{
+    padding-bottom: 20px;
+}
+p{
+    color: #555;
+}
+h2{
+    color: #444;
+}
+.about-me2 > div{
+    width: 50% ;
+    float: left;
+}
+.about-me2 .icon{
+    width: 20%;
+    float: left;
+    margin-top: 20px;
+    margin-right: -8px;
+}
+.about-me2 .text{
+    width: 80%;
+    float: left;
+}
+.icon i{
+    font-size: 30px;
+    color: rgb(45, 78, 228);
+}
+
+.skill{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding: 50px 0px;
+}
+.skills{
+    width: 40%;
+    float: left;
+}
+.skills h2{
+    padding: 10px 0;
+}
+.skills p{
+    line-height: 1.7;
+}
+.skills button{
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 19px;
+    background-color: rgba(187, 160, 160, 0);
+    border: 2px solid rgb(69, 110, 223);
+    color: rgb(69, 110, 223);
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.nspa{
+    width: 40%;
+    float: left;
+    margin-left: 100px;
+}
+.nspa div{
+    margin-bottom: 10px;
+}
+progress {
+    position: absolute;
+    height: 24px;
+    width: 500px;
+    border: 1px solid #fff;
+ }
+ progress::before {
+    content: "Loading: " attr(value) "%";
+    position: absolute;
+    width: 100%;
+    text-align: center;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+ }
+ progress::-webkit-progress-bar {
+    background-color: gainsboro;
+ }
+ progress::-webkit-progress-value {
+    background-color: rgb(36, 100, 153);
+ }
+.res{
+    text-align: center;
+    background-color: gainsboro;
+    width: 100%;
+}
+.res button{
+    margin-top: 20px;
+    padding: 10px;
+    font-size: 19px;
+    background-color: rgba(187, 160, 160, 0);
+    border: 2px solid rgb(69, 110, 223);
+    color: rgb(69, 110, 223);
+    font-weight: 700;
+    cursor: pointer;
+    text-transform: uppercase;
+}
+.res h2{
+   text-transform: uppercase;
+    padding-bottom: 20px;
+
+}
+.edu{
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 50px;
+}
+.my-edu,.inf{
+    width: 45%;
+    float: left;
+}
+.inf{
+    margin-left: 60px;
+}
+.my-edu h2,.inf h2{
+    margin-bottom: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+.inf1 button,.inf2 button{
+    padding: 10px;
+    font-size: 17px;
+    text-transform: uppercase;
+    color: #fff;
+    background-color: rgb(23, 91, 238);
+    border: 0;
+    cursor: pointer;
+    margin: 20px 0;
+}
+.hr-p{
+    padding: 40px 0;
+}
+.my-edu p:last-child{
+    padding-top: 40px;
+}
+.skill h3{
+    padding-top: 30px;
+}
+.join ul{
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+    
+}
+.join .active, .join ul li:hover{
+    background-color: rgb(78, 140, 221);
+}
+.join ul li{
+    width: 10px;
+    height: 10px;
+    float: left;
+    margin-left: 1px;
+    border-radius: 50%;
+    border: 2px solid rgb(78, 140, 221);
+}
+.portfolio{
+    width: 80%;
+    margin: auto;
+    padding-top: 60px;
+}
+.info h2{
+    padding-bottom: 20px;
+}
+.info p{
+    padding-bottom: 40px;
+}
+.info{
+    text-align: center;
+}
+.img-por{
+    display: grid;
+    grid-template-columns: repeat(3,32%);
+    grid-gap: 30px;
+    
+}
+.img-por > div{
+    border: 2px solid #777777;
+    height: 250px;
+}
+.img-por > div > img{
+    width: 100%;
+    height: 100%;
+}
+
+.cont{
+    width: 100%;
+    background-color: rgb(42, 54, 59);
+    margin-top: 40px;
+}
+.dou h2{
+    color: #fff;
+}
+.dou p{
+    color: #777;
+    line-height: 1.5;
+}
+.dou h4{
+    padding-top: 10px;
+    color: #fff;
+}
+.dou h4 span{
+    color: #888;
+    margin-left: 20px;
+}
+.inf > div{
+    margin-bottom: 10px;
+}
+.inf p{
+    color: #fff;
+}
+.inf input[type = "text"]{
+    background-color: #888;
+    padding: 6px;
+    margin-top: -15px;
+    width: 80%;
+    color: #fff;
+}
+.inf textarea{
+    background-color: #888;
+    padding: 6px;
+    margin-top: -15px;
+    width: 80%;
+    height: 180px;
+    color: #fff;
+}
+.inff button{
+    padding: 10px;
+    color: #ffffff;
+    background: rgb(25, 34, 41);
+    border: 0;
+    cursor: pointer;
+    
+}
+.foot{
+    text-align: center;
+    color: gainsboro;
+    background-color: rgb(25, 34, 41);
+    padding: 40px;
+}
+.foot h4{
+    float: left;
+}
+.foot > i{
+    padding: 0 10px;
+   font-size: 27px;
+    float: right;
+    cursor: pointer;
+}
+.foot > i:hover{
+    color: #ffffff;
+}
